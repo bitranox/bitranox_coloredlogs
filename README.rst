@@ -192,6 +192,8 @@ Usage from Commandline
 
 .. code-block:: bash
 
+   can not get help - probably not a proper click application
+
 Requirements
 ------------
 following modules will be automatically installed :
