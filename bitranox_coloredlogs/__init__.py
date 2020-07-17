@@ -422,7 +422,7 @@ def install(level=None, **kw):
                 use_colors = enable_ansi_support()
             # Disable ANSI escape sequences if 'stream' isn't connected to a terminal.
             if use_colors or use_colors is None:
-                use_colors = terminal_supports_colors(stream)
+                use_colors = terminal_supports_colors(stream) or terminal_supports_colors(sys.stderr)
         # isatty should force color, not ask again if the terminal reports back if it is capable
         # this leads to no color in travis and jupyter !
         if force_color:
