@@ -227,10 +227,8 @@ Changelog
 - new MINOR version for added functionality in a backwards compatible manner
 - new PATCH version for backwards compatible bug fixes
 
-0.0.1
------
-YYYY-MM-DD: <some release name>
-    - change1
-    - change2
-    - ...
+14.0.1
+------
+2020-07-17: patch release
+    - make parameter install(isatty=True) forcing ColorFormatter
 
