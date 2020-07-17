@@ -1,6 +1,6 @@
 name = 'bitranox_coloredlogs'
 title = 'fork of xolox coloredlogs with possibility to log to travis and jupyter'
-version = '14.0.1'
+version = '14.0.3a'
 url = 'https://github.com/bitranox/bitranox_coloredlogs'
 author = 'Robert Nowotny'
 author_email = 'bitranox@gmail.com'
@@ -14,7 +14,7 @@ Info for bitranox_coloredlogs:
 
     fork of xolox coloredlogs with possibility to log to travis and jupyter
 
-    Version : 14.0.1
+    Version : 14.0.3a
     Url     : https://github.com/bitranox/bitranox_coloredlogs
     Author  : Robert Nowotny
     Email   : bitranox@gmail.com""")

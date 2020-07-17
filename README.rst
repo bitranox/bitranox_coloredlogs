@@ -1,4 +1,4 @@
-Version 14.0.1 as of 2020-07-17, see changelog_
+Version 14.0.3a as of 2020-07-17, see changelog_
 
 =======================================================
 
@@ -226,6 +226,16 @@ Changelog
 - new MAJOR version for incompatible API changes,
 - new MINOR version for added functionality in a backwards compatible manner
 - new PATCH version for backwards compatible bug fixes
+
+14.0.3a
+------------
+2020-07-17: development
+    -
+
+14.0.2
+------------
+2020-07-17: pulling in @EpicWink default stream for TTY-check is stderr
+    -
 
 14.0.1
 ------
