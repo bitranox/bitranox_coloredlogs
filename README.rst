@@ -1,0 +1,224 @@
+Version 14.0.1 as of 2020-07-17, see changelog_
+
+=======================================================
+
+bitranox_coloredlogs
+====================
+
+|travis_build| |license| |jupyter| |pypi|
+
+|codecov| |better_code| |cc_maintain| |cc_issues| |cc_coverage| |snyk|
+
+
+.. |travis_build| image:: https://img.shields.io/travis/bitranox/bitranox_coloredlogs/master.svg
+   :target: https://travis-ci.org/bitranox/bitranox_coloredlogs
+
+.. |license| image:: https://img.shields.io/github/license/webcomics/pywine.svg
+   :target: http://en.wikipedia.org/wiki/MIT_License
+
+.. |jupyter| image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/bitranox/bitranox_coloredlogs/master?filepath=bitranox_coloredlogs.ipynb
+
+.. for the pypi status link note the dashes, not the underscore !
+.. |pypi| image:: https://img.shields.io/pypi/status/bitranox-coloredlogs?label=PyPI%20Package
+   :target: https://badge.fury.io/py/bitranox_coloredlogs
+
+.. |codecov| image:: https://img.shields.io/codecov/c/github/bitranox/bitranox_coloredlogs
+   :target: https://codecov.io/gh/bitranox/bitranox_coloredlogs
+
+.. |better_code| image:: https://bettercodehub.com/edge/badge/bitranox/bitranox_coloredlogs?branch=master
+   :target: https://bettercodehub.com/results/bitranox/bitranox_coloredlogs
+
+.. |cc_maintain| image:: https://img.shields.io/codeclimate/maintainability-percentage/bitranox/bitranox_coloredlogs?label=CC%20maintainability
+   :target: https://codeclimate.com/github/bitranox/bitranox_coloredlogs/maintainability
+   :alt: Maintainability
+
+.. |cc_issues| image:: https://img.shields.io/codeclimate/issues/bitranox/bitranox_coloredlogs?label=CC%20issues
+   :target: https://codeclimate.com/github/bitranox/bitranox_coloredlogs/maintainability
+   :alt: Maintainability
+
+.. |cc_coverage| image:: https://img.shields.io/codeclimate/coverage/bitranox/bitranox_coloredlogs?label=CC%20coverage
+   :target: https://codeclimate.com/github/bitranox/bitranox_coloredlogs/test_coverage
+   :alt: Code Coverage
+
+.. |snyk| image:: https://img.shields.io/snyk/vulnerabilities/github/bitranox/bitranox_coloredlogs
+   :target: https://snyk.io/test/github/bitranox/bitranox_coloredlogs
+
+put your description of the project under .docs/description.rst
+
+----
+
+automated tests, Travis Matrix, Documentation, Badges, etc. are managed with `PizzaCutter <https://github
+.com/bitranox/PizzaCutter>`_ (cookiecutter on steroids)
+
+Python version required: 3.6.0 or newer
+
+tested on linux "bionic" with python 3.6, 3.7, 3.8, 3.8-dev, pypy3
+
+tested under `Linux, macOS, Windows <https://travis-ci.org/bitranox/bitranox_coloredlogs>`_, automatic daily builds and monitoring
+
+----
+
+- `Try it Online`_
+- `Installation and Upgrade`_
+- `Usage`_
+- `Usage from Commandline`_
+- `Requirements`_
+- `Acknowledgements`_
+- `Contribute`_
+- `Report Issues <https://github.com/bitranox/bitranox_coloredlogs/blob/master/ISSUE_TEMPLATE.md>`_
+- `Pull Request <https://github.com/bitranox/bitranox_coloredlogs/blob/master/PULL_REQUEST_TEMPLATE.md>`_
+- `Code of Conduct <https://github.com/bitranox/bitranox_coloredlogs/blob/master/CODE_OF_CONDUCT.md>`_
+- `License`_
+- `Changelog`_
+
+----
+
+Try it Online
+-------------
+
+You might try it right away in Jupyter Notebook by using the "launch binder" badge, or click `here <https://mybinder.org/v2/gh/{{rst_include.
+repository_slug}}/master?filepath=bitranox_coloredlogs.ipynb>`_
+
+Installation and Upgrade
+------------------------
+
+- Before You start, its highly recommended to update pip and setup tools:
+
+
+.. code-block:: bash
+
+    python -m pip --upgrade pip
+    python -m pip --upgrade setuptools
+    python -m pip --upgrade wheel
+
+- to install the latest release from PyPi via pip (recommended):
+
+.. code-block:: bash
+
+    # install latest release from PyPi
+    python -m pip install --upgrade bitranox_coloredlogs
+
+    # test latest release from PyPi without installing (can be skipped)
+    python -m pip install bitranox_coloredlogs --install-option test
+
+- to install the latest development version from github via pip:
+
+
+.. code-block:: bash
+
+    # normal install
+    python -m pip install --upgrade git+https://github.com/bitranox/bitranox_coloredlogs.git
+
+    # to test without installing (can be skipped)
+    python -m pip install git+https://github.com/bitranox/bitranox_coloredlogs.git --install-option test
+
+    # to install and upgrade all dependencies regardless of version number
+    python -m pip install --upgrade git+https://github.com/bitranox/bitranox_coloredlogs.git --upgrade-strategy eager
+
+
+- include it into Your requirements.txt:
+
+.. code-block:: bash
+
+    # Insert following line in Your requirements.txt:
+    # for the latest Release on pypi:
+    bitranox_coloredlogs
+
+    # for the latest development version :
+    bitranox_coloredlogs @ git+https://github.com/bitranox/bitranox_coloredlogs.git
+
+    # to install and upgrade all modules mentioned in requirements.txt:
+    python -m pip install --upgrade -r /<path>/requirements.txt
+
+
+
+- to install the latest development version from source code:
+
+.. code-block:: bash
+
+    # cd ~
+    $ git clone https://github.com/bitranox/bitranox_coloredlogs.git
+    $ cd bitranox_coloredlogs
+
+    # to test without installing (can be skipped)
+    python setup.py test
+
+    # normal install
+    python setup.py install
+
+- via makefile:
+  makefiles are a very convenient way to install. Here we can do much more,
+  like installing virtual environments, clean caches and so on.
+
+.. code-block:: shell
+
+    # from Your shell's homedirectory:
+    $ git clone https://github.com/bitranox/bitranox_coloredlogs.git
+    $ cd bitranox_coloredlogs
+
+    # to run the tests:
+    $ make test
+
+    # to install the package
+    $ make install
+
+    # to clean the package
+    $ make clean
+
+    # uninstall the package
+    $ make uninstall
+
+Usage
+-----------
+
+.. code-block::
+
+    import the module and check the code - its easy and documented there, including doctest examples.
+    in case of any questions the usage section might be expanded at a later time
+
+Usage from Commandline
+------------------------
+
+.. code-block:: bash
+
+Requirements
+------------
+following modules will be automatically installed :
+
+.. code-block:: bash
+
+    humanfriendly >= 7.1
+
+Acknowledgements
+----------------
+
+- special thanks to "uncle bob" Robert C. Martin, especially for his books on "clean code" and "clean architecture"
+
+Contribute
+----------
+
+I would love for you to fork and send me pull request for this project.
+- `please Contribute <https://github.com/bitranox/bitranox_coloredlogs/blob/master/CONTRIBUTING.md>`_
+
+License
+-------
+
+This software is licensed under the `MIT license <http://en.wikipedia.org/wiki/MIT_License>`_
+
+---
+
+Changelog
+=========
+
+- new MAJOR version for incompatible API changes,
+- new MINOR version for added functionality in a backwards compatible manner
+- new PATCH version for backwards compatible bug fixes
+
+0.0.1
+-----
+YYYY-MM-DD: <some release name>
+    - change1
+    - change2
+    - ...
+
