@@ -425,7 +425,7 @@ def install(level=None, **kw):
                 # bitranox - somehow I dont like it - see :
                 # https://github.com/xolox/python-coloredlogs/pull/92
                 # original line: use_colors = terminal_supports_colors(stream)
-                use_colors = terminal_supports_colors(stream) or terminal_supports_colors(sys.stderr)
+                use_colors = terminal_supports_colors(stream or sys.stderr)
         # isatty should force color, not ask again if the terminal reports back if it is capable
         # this leads to no color in travis and jupyter !
         if force_color:
