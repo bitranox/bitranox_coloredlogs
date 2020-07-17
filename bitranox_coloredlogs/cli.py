@@ -57,7 +57,7 @@ try:
     if sys.argv[1] == '--version':
         print('14.0')
         exit(0)
-except ValueError:
+except IndexError:
     pass
 
 # External dependencies.
