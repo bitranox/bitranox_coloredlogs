@@ -191,10 +191,10 @@ import socket
 import sys
 
 # External dependencies.
-from humanfriendly import coerce_boolean
-from humanfriendly.compat import coerce_string, is_string, on_windows
-from humanfriendly.terminal import ANSI_COLOR_CODES, ansi_wrap, enable_ansi_support, terminal_supports_colors
-from humanfriendly.text import format, split
+from humanfriendly import coerce_boolean                                                                                # type: ignore
+from humanfriendly.compat import coerce_string, is_string, on_windows                                                   # type: ignore
+from humanfriendly.terminal import ANSI_COLOR_CODES, ansi_wrap, enable_ansi_support, terminal_supports_colors           # type: ignore
+from humanfriendly.text import format, split                                                                            # type: ignore
 
 # Semi-standard module versioning.
 __version__ = '14.0'
@@ -693,7 +693,7 @@ def find_level_aliases():
     return aliases
 
 
-def parse_encoded_styles(text, normalize_key=None):
+def parse_encoded_styles(text):
     """
     Parse text styles encoded in a string into a nested data structure.
 
@@ -1426,7 +1426,7 @@ class NameNormalizer(object):
         Transforms all strings to lowercase and resolves level name aliases
         (refer to :func:`find_level_aliases()`) to their canonical name:
 
-        >>> from coloredlogs import NameNormalizer
+        >>> from bitranox_coloredlogs import NameNormalizer
         >>> from humanfriendly import format_table
         >>> nn = NameNormalizer()
         >>> sample_names = ['DEBUG', 'INFO', 'WARN', 'WARNING', 'ERROR', 'FATAL', 'CRITICAL']
