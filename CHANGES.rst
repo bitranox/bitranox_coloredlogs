@@ -6,12 +6,7 @@ Changelog
 - new PATCH version for backwards compatible bug fixes
 
 
-14.0.4a0
-------------
-2020-07-22: development
-
-
-14.0.3
+14.0.4
 ------------
 2020-07-17: patch release
     - added __init__.pyi file to make minimal type annotations
