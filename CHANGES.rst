@@ -5,10 +5,11 @@ Changelog
 - new MINOR version for added functionality in a backwards compatible manner
 - new PATCH version for backwards compatible bug fixes
 
-14.0.3a
+14.0.3
 ------------
-2020-07-17: development
-    -
+2020-07-17: patch release
+    - added __init__.pyi file to make minimal type annotations
+    - make it a PEP561 package
 
 14.0.2
 ------------

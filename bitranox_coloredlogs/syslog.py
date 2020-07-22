@@ -33,7 +33,7 @@ import socket
 import sys
 
 # Modules included in our package.
-from coloredlogs import (
+from bitranox_coloredlogs import (
     DEFAULT_LOG_LEVEL,
     ProgramNameFilter,
     adjust_level,
