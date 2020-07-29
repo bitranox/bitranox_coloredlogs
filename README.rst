@@ -1,4 +1,4 @@
-Version 14.0.4 as of 2020-07-22, see changelog_
+Version 14.0.5 as of 2020-07-29, see changelog_
 
 =======================================================
 
@@ -70,9 +70,9 @@ tested under `Linux, macOS, Windows <https://travis-ci.org/bitranox/bitranox_col
 ----
 
 - `Try it Online`_
-- `Installation and Upgrade`_
 - `Usage`_
 - `Usage from Commandline`_
+- `Installation and Upgrade`_
 - `Requirements`_
 - `Acknowledgements`_
 - `Contribute`_
@@ -89,6 +89,21 @@ Try it Online
 
 You might try it right away in Jupyter Notebook by using the "launch binder" badge, or click `here <https://mybinder.org/v2/gh/{{rst_include.
 repository_slug}}/master?filepath=bitranox_coloredlogs.ipynb>`_
+
+Usage
+-----------
+
+.. code-block::
+
+    import the module and check the code - its easy and documented there, including doctest examples.
+    in case of any questions the usage section might be expanded at a later time
+
+Usage from Commandline
+------------------------
+
+.. code-block:: bash
+
+   can not get help - probably not a proper click application
 
 Installation and Upgrade
 ------------------------
@@ -178,21 +193,6 @@ Installation and Upgrade
 
     # uninstall the package
     $ make uninstall
-
-Usage
------------
-
-.. code-block::
-
-    import the module and check the code - its easy and documented there, including doctest examples.
-    in case of any questions the usage section might be expanded at a later time
-
-Usage from Commandline
-------------------------
-
-.. code-block:: bash
-
-   can not get help - probably not a proper click application
 
 Requirements
 ------------
