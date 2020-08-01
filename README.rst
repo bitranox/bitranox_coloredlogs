@@ -1,7 +1,8 @@
 bitranox_coloredlogs
 ====================
 
-Version v14.0.7 as of 2020-08-01, see `Changelog`_.
+
+Version v14.0.7 as of 2020-08-01 see `Changelog`_
 
 |travis_build| |license| |jupyter| |pypi|
 
