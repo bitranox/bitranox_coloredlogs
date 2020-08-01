@@ -5,6 +5,9 @@ Changelog
 - new MINOR version for added functionality in a backwards compatible manner
 - new PATCH version for backwards compatible bug fixes
 
+v14.0.7
+---------
+2020-08-01: fix pypi deploy
 
 v14.0.6
 ---------
