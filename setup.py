@@ -88,7 +88,7 @@ if is_travis_deploy() and is_tagged_commit():
 
 setup_kwargs: Dict[str, Any] = dict()
 setup_kwargs['name'] = 'bitranox_coloredlogs'
-setup_kwargs['version'] = 'v14.0.6'
+setup_kwargs['version'] = 'v14.0.7'
 setup_kwargs['url'] = 'https://github.com/bitranox/bitranox_coloredlogs'
 setup_kwargs['packages'] = find_packages()
 setup_kwargs['package_data'] = {'bitranox_coloredlogs': ['__init__.pyi', 'py.typed', '*.pyi', '__init__.pyi']}
