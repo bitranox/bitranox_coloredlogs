@@ -2,7 +2,7 @@ bitranox_coloredlogs
 ====================
 
 
-Version v14.0.7 as of 2020-08-01 see `Changelog`_
+Version v14.0.8 as of 2020-08-08 see `Changelog`_
 
 |travis_build| |license| |jupyter| |pypi|
 
@@ -114,31 +114,19 @@ Installation and Upgrade
 
     python -m pip --upgrade pip
     python -m pip --upgrade setuptools
-    python -m pip --upgrade wheel
 
 - to install the latest release from PyPi via pip (recommended):
 
 .. code-block:: bash
 
-    # install latest release from PyPi
     python -m pip install --upgrade bitranox_coloredlogs
 
-    # test latest release from PyPi without installing (can be skipped)
-    python -m pip install bitranox_coloredlogs --install-option test
-
-- to install the latest development version from github via pip:
+- to install the latest version from github via pip:
 
 
 .. code-block:: bash
 
-    # normal install
     python -m pip install --upgrade git+https://github.com/bitranox/bitranox_coloredlogs.git
-
-    # to test without installing (can be skipped)
-    python -m pip install git+https://github.com/bitranox/bitranox_coloredlogs.git --install-option test
-
-    # to install and upgrade all dependencies regardless of version number
-    python -m pip install --upgrade git+https://github.com/bitranox/bitranox_coloredlogs.git --upgrade-strategy eager
 
 
 - include it into Your requirements.txt:
@@ -156,7 +144,6 @@ Installation and Upgrade
     python -m pip install --upgrade -r /<path>/requirements.txt
 
 
-
 - to install the latest development version from source code:
 
 .. code-block:: bash
@@ -164,11 +151,6 @@ Installation and Upgrade
     # cd ~
     $ git clone https://github.com/bitranox/bitranox_coloredlogs.git
     $ cd bitranox_coloredlogs
-
-    # to test without installing (can be skipped)
-    python setup.py test
-
-    # normal install
     python setup.py install
 
 - via makefile:
@@ -227,6 +209,14 @@ Changelog
 - new MAJOR version for incompatible API changes,
 - new MINOR version for added functionality in a backwards compatible manner
 - new PATCH version for backwards compatible bug fixes
+
+v14.0.8
+--------
+2020-08-08: service release
+    - fix documentation
+    - fix travis
+    - deprecate pycodestyle
+    - implement flake8
 
 v14.0.7
 ---------

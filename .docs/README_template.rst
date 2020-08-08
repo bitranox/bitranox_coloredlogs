@@ -2,7 +2,7 @@ bitranox_coloredlogs
 ====================
 
 
-Version v14.0.7 as of 2020-08-01 see `Changelog`_
+Version v14.0.8 as of 2020-08-08 see `Changelog`_
 
 
 .. include:: ./badges.rst
