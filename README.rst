@@ -2,7 +2,7 @@ bitranox_coloredlogs
 ====================
 
 
-Version v14.0.8 as of 2020-08-08 see `Changelog`_
+Version v14.0.9 as of 2020-10-09 see `Changelog`_
 
 |travis_build| |license| |jupyter| |pypi|
 
@@ -42,6 +42,9 @@ Version v14.0.8 as of 2020-08-08 see `Changelog`_
 
 .. |snyk| image:: https://img.shields.io/snyk/vulnerabilities/github/bitranox/bitranox_coloredlogs
    :target: https://snyk.io/test/github/bitranox/bitranox_coloredlogs
+
+.. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
 
 fork of xolox coloredlogs with possibility to log to travis and jupyter
 
@@ -209,6 +212,12 @@ Changelog
 - new MAJOR version for incompatible API changes,
 - new MINOR version for added functionality in a backwards compatible manner
 - new PATCH version for backwards compatible bug fixes
+
+v14.0.9
+--------
+2020-10-09: service release
+    - update travis build matrix for linux 3.9-dev
+    - update travis build matrix (paths) for windows 3.9 / 3.10
 
 v14.0.8
 --------
